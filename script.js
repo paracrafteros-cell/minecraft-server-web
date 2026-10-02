@@ -1,104 +1,137 @@
-// ========================================
-// ParaCraft - JavaScript
-// ========================================
+// ==========================================
+// NIXORA - JAVASCRIPT
+// ==========================================
 
 
 // AÑO AUTOMÁTICO
 const year = document.getElementById("year");
 
 if (year) {
-  year.textContent = new Date().getFullYear();
+    year.textContent = new Date().getFullYear();
 }
 
 
-// MENÚ MÓVIL
-const menuButton = document.getElementById("menuButton");
-const navigation = document.getElementById("navigation");
-
-if (menuButton && navigation) {
-
-  menuButton.addEventListener("click", () => {
-    navigation.classList.toggle("open");
-  });
-
-}
-
-
-// CERRAR MENÚ AL PULSAR UN ENLACE
-document.querySelectorAll(".navigation a").forEach(link => {
-
-  link.addEventListener("click", () => {
-
-    navigation?.classList.remove("open");
-
-  });
-
-});
-
-
-// NAVBAR AL HACER SCROLL
+// NAVBAR
 const navbar = document.getElementById("navbar");
 
 window.addEventListener("scroll", () => {
 
-  if (!navbar) return;
-
-  if (window.scrollY > 30) {
-
-    navbar.classList.add("scrolled");
-
-  } else {
-
-    navbar.classList.remove("scrolled");
-
-  }
+    if (window.scrollY > 30) {
+        navbar.classList.add("scrolled");
+    } else {
+        navbar.classList.remove("scrolled");
+    }
 
 });
 
 
-// ANIMACIONES DE APARICIÓN
-const revealElements = document.querySelectorAll(".reveal");
+// MENÚ MÓVIL
+const menuButton = document.getElementById("menuButton");
+const navLinks = document.getElementById("navLinks");
 
-const revealObserver = new IntersectionObserver(
+if (menuButton && navLinks) {
 
-  entries => {
+    menuButton.addEventListener("click", () => {
+        navLinks.classList.toggle("open");
+    });
 
-    entries.forEach(entry => {
 
-      if (entry.isIntersecting) {
+    // Cerrar menú al pulsar un enlace
+    const links = navLinks.querySelectorAll("a");
 
-        entry.target.classList.add("visible");
+    links.forEach(link => {
 
-        revealObserver.unobserve(entry.target);
-
-      }
+        link.addEventListener("click", () => {
+            navLinks.classList.remove("open");
+        });
 
     });
 
-  },
+}
 
-  {
-    threshold: 0.12
-  }
 
+// ANIMACIONES AL HACER SCROLL
+const revealElements = document.querySelectorAll(".reveal");
+
+const observer = new IntersectionObserver(
+    (entries) => {
+
+        entries.forEach(entry => {
+
+            if (entry.isIntersecting) {
+
+                entry.target.classList.add("visible");
+
+                observer.unobserve(entry.target);
+
+            }
+
+        });
+
+    },
+    {
+        threshold: 0.12
+    }
 );
 
 
 revealElements.forEach(element => {
-
-  revealObserver.observe(element);
-
+    observer.observe(element);
 });
 
 
-// CERRAR MENÚ SI SE REDIMENSIONA LA VENTANA
+// CERRAR MENÚ SI SE CAMBIA A ESCRITORIO
 window.addEventListener("resize", () => {
 
-  if (window.innerWidth > 760) {
-
-    navigation?.classList.remove("open");
-
-  }
+    if (window.innerWidth > 760) {
+        navLinks.classList.remove("open");
+    }
 
 });
+
+
+// EFECTO SUAVE PARA LOS ENLACES
+document.querySelectorAll('a[href^="#"]').forEach(link => {
+
+    link.addEventListener("click", function (event) {
+
+        const targetId = this.getAttribute("href");
+
+        if (targetId === "#") {
+            return;
+        }
+
+        const target = document.querySelector(targetId);
+
+        if (!target) {
+            return;
+        }
+
+        event.preventDefault();
+
+        target.scrollIntoView({
+            behavior: "smooth",
+            block: "start"
+        });
+
+    });
+
 });
+
+
+// EFECTO DE MOVIMIENTO MUY SUTIL EN LA TARJETA DEL HERO
+const heroWindow = document.querySelector(".minecraft-window");
+
+if (heroWindow && window.innerWidth > 760) {
+
+    document.addEventListener("mousemove", (event) => {
+
+        const x = (window.innerWidth / 2 - event.clientX) / 70;
+        const y = (window.innerHeight / 2 - event.clientY) / 70;
+
+        heroWindow.style.transform =
+            `rotateY(${x}deg) rotateX(${y}deg)`;
+
+    });
+
+}
