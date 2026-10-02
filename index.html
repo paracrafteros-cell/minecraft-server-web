@@ -3,141 +3,717 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>NIXORAMC | Servidor de Minecraft</title>
-  <meta name="description" content="Sitio oficial de NOMBREMC, servidor de Minecraft.">
+
+  <meta
+    name="description"
+    content="ParaCraft — servidor de Minecraft Java y Bedrock."
+  >
+
+  <title>ParaCraft | Servidor de Minecraft</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+    rel="stylesheet"
+  >
+
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-  <header class="navbar">
-    <a class="logo" href="#inicio"><span class="logo-box">⛏</span>NOMBRE<span>MC</span></a>
-    <nav id="nav">
+
+  <div class="background-grid"></div>
+  <div class="glow glow-one"></div>
+  <div class="glow glow-two"></div>
+
+  <!-- NAVBAR -->
+  <header class="navbar" id="navbar">
+
+    <a href="#inicio" class="logo">
+      <span class="logo-icon">P</span>
+      <span>ParaCraft</span>
+    </a>
+
+    <button class="menu-button" id="menuButton">
+      ☰
+    </button>
+
+    <nav class="navigation" id="navigation">
       <a href="#inicio">Inicio</a>
       <a href="#servidor">Servidor</a>
       <a href="#modalidades">Modalidades</a>
       <a href="#caracteristicas">Características</a>
-      <a href="#galeria">Galería</a>
+      <a href="#descripcion">Descripción</a>
       <a href="#noticias">Noticias</a>
       <a href="#equipo">Equipo</a>
       <a href="#reglas">Reglas</a>
     </nav>
-    <button id="menuBtn" class="menu-btn" aria-label="Abrir menú">☰</button>
+
   </header>
 
+
   <main>
-    <section id="inicio" class="hero">
-      <div class="hero-bg"></div>
+
+    <!-- HERO -->
+    <section class="hero" id="inicio">
+
       <div class="hero-content reveal">
-        <div class="eyebrow">BIENVENIDO A</div>
-        <h1>NOMBRE<span>MC</span></h1>
-        <p>Una comunidad de Minecraft creada para explorar, construir y vivir experiencias únicas.</p>
+
+        <div class="status">
+          <span class="status-dot"></span>
+          SERVIDOR DE MINECRAFT
+        </div>
+
+        <h1>
+          PARA<span>CRAFT</span>
+        </h1>
+
+        <p>
+          Un servidor de Minecraft creado para explorar,
+          construir, competir y formar parte de una comunidad.
+        </p>
+
         <div class="tags">
-          <span>JAVA</span><span>BEDROCK</span><span>COMUNIDAD</span>
+          <span>JAVA</span>
+          <span>BEDROCK</span>
+          <span>COMUNIDAD</span>
+          <span>EVENTOS</span>
         </div>
-      </div>
-      <div class="scroll">DESCUBRE NUESTRO SERVIDOR <b>↓</b></div>
-    </section>
 
-    <section id="servidor" class="section">
-      <div class="section-head reveal">
-        <small>01</small><h2>Nuestro servidor</h2>
-        <p>Conoce la historia y la visión detrás de nuestra comunidad.</p>
       </div>
-      <div class="two-col">
-        <div class="reveal">
-          <h3>Una comunidad hecha para Minecraft</h3>
-          <p>Construimos un espacio donde los jugadores puedan disfrutar de Minecraft, conocer personas y participar en experiencias creadas para nuestra comunidad.</p>
-          <p>El servidor reúne diferentes modalidades, eventos y sistemas personalizados.</p>
-          <div class="stats">
-            <div><strong>2026</strong><span>Año de creación</span></div>
-            <div><strong>JAVA + BEDROCK</strong><span>Compatibilidad</span></div>
-            <div><strong>24/7</strong><span>Disponibilidad</span></div>
+
+
+      <div class="hero-card reveal delay-1">
+
+        <div class="card-header">
+          <strong>PARACRAFT</strong>
+          <span class="online">● ONLINE</span>
+        </div>
+
+        <div class="hero-card-content">
+
+          <div class="minecraft-symbol">
+            ◆
           </div>
+
+          <h2>
+            Tu próxima aventura
+            empieza aquí.
+          </h2>
+
+          <p>
+            Explora mundos, construye grandes proyectos
+            y descubre todo lo que ParaCraft tiene para ofrecer.
+          </p>
+
         </div>
-        <div class="preview reveal">
-          <div class="preview-art">NOMBREMC</div>
-          <div class="preview-text"><small>INFORMACIÓN</small><h3>Una experiencia diferente</h3><p>Mundos, modalidades, eventos y una comunidad en crecimiento.</p></div>
+
+        <div class="hero-stats">
+
+          <div>
+            <strong>24/7</strong>
+            <small>Disponibilidad</small>
+          </div>
+
+          <div>
+            <strong>JAVA</strong>
+            <small>Edición</small>
+          </div>
+
+          <div>
+            <strong>BEDROCK</strong>
+            <small>Edición</small>
+          </div>
+
         </div>
+
       </div>
+
     </section>
 
-    <section id="modalidades" class="section dark">
-      <div class="section-head reveal"><small>02</small><h2>Modalidades</h2><p>Diferentes formas de disfrutar nuestro servidor.</p></div>
-      <div class="grid cards">
-        <article class="card reveal"><i>🌲</i><b>01</b><h3>Survival</h3><p>Explora, construye, consigue recursos y crea tu propia aventura.</p></article>
-        <article class="card reveal"><i>⚔️</i><b>02</b><h3>PvP</h3><p>Enfréntate a otros jugadores y demuestra tus habilidades.</p></article>
-        <article class="card reveal"><i>☁️</i><b>03</b><h3>SkyBlock</h3><p>Comienza en una pequeña isla y conviértela en un gran mundo.</p></article>
-        <article class="card reveal"><i>🏰</i><b>04</b><h3>Eventos</h3><p>Participa en actividades especiales de la comunidad.</p></article>
-        <article class="card reveal"><i>🏗️</i><b>05</b><h3>Creativo</h3><p>Construye sin límites y demuestra tu creatividad.</p></article>
-        <article class="card reveal"><i>💀</i><b>06</b><h3>Hardcore</h3><p>Una experiencia donde cada decisión puede ser la última.</p></article>
+
+    <!-- SERVIDOR -->
+    <section class="section" id="servidor">
+
+      <div class="section-title reveal">
+
+        <span>01 / EL PROYECTO</span>
+
+        <h2>
+          Nuestro servidor
+        </h2>
+
+        <p>
+          ParaCraft es un proyecto de Minecraft pensado
+          para crear una comunidad activa y ofrecer diferentes
+          experiencias dentro de un mismo servidor.
+        </p>
+
       </div>
+
+
+      <div class="info-grid">
+
+        <article class="info-card reveal">
+
+          <span>01</span>
+
+          <h3>
+            Comunidad
+          </h3>
+
+          <p>
+            Un espacio para conocer jugadores,
+            compartir construcciones y disfrutar
+            diferentes aventuras.
+          </p>
+
+        </article>
+
+
+        <article class="info-card reveal delay-1">
+
+          <span>02</span>
+
+          <h3>
+            Mundo
+          </h3>
+
+          <p>
+            Mundos, zonas especiales y diferentes
+            experiencias que pueden crecer con
+            el proyecto.
+          </p>
+
+        </article>
+
+
+        <article class="info-card reveal delay-2">
+
+          <span>03</span>
+
+          <h3>
+            Proyecto
+          </h3>
+
+          <p>
+            ParaCraft está pensado para evolucionar
+            con nuevas modalidades, eventos y sistemas.
+          </p>
+
+        </article>
+
+      </div>
+
     </section>
 
-    <section id="caracteristicas" class="section">
-      <div class="section-head reveal"><small>03</small><h2>Características</h2><p>Algunas de las cosas que forman parte de nuestra experiencia.</p></div>
-      <div class="grid features">
-        <article class="feature reveal"><i>🌍</i><h3>Mundos personalizados</h3><p>Mapas diseñados especialmente para la comunidad.</p></article>
-        <article class="feature reveal"><i>🏪</i><h3>Economía</h3><p>Sistema económico integrado en diferentes modalidades.</p></article>
-        <article class="feature reveal"><i>🏆</i><h3>Eventos</h3><p>Eventos especiales y actividades para la comunidad.</p></article>
-        <article class="feature reveal"><i>🛡️</i><h3>Protección</h3><p>Sistemas para mantener nuestros mundos protegidos.</p></article>
-        <article class="feature reveal"><i>👥</i><h3>Comunidad</h3><p>Un espacio para conocer y jugar con otros jugadores.</p></article>
-        <article class="feature reveal"><i>⚙️</i><h3>Sistemas personalizados</h3><p>Funciones creadas específicamente para el servidor.</p></article>
+
+    <!-- MODALIDADES -->
+    <section class="section dark" id="modalidades">
+
+      <div class="section-title reveal">
+
+        <span>02 / EXPERIENCIAS</span>
+
+        <h2>
+          Modalidades
+        </h2>
+
+        <p>
+          Diferentes maneras de disfrutar Minecraft.
+        </p>
+
       </div>
+
+
+      <div class="modes-grid">
+
+        <article class="mode reveal">
+          <div class="mode-icon">⛏</div>
+          <h3>Survival</h3>
+          <p>
+            Sobrevive, consigue recursos y construye
+            tu propio lugar en el mundo.
+          </p>
+          <small>AVENTURA</small>
+        </article>
+
+
+        <article class="mode reveal delay-1">
+          <div class="mode-icon">⚔</div>
+          <h3>PvP</h3>
+          <p>
+            Combates y desafíos para quienes
+            buscan acción.
+          </p>
+          <small>COMPETENCIA</small>
+        </article>
+
+
+        <article class="mode reveal delay-2">
+          <div class="mode-icon">☁</div>
+          <h3>SkyBlock</h3>
+          <p>
+            Empieza desde una pequeña isla y
+            conviértela en un gran proyecto.
+          </p>
+          <small>PROGRESIÓN</small>
+        </article>
+
+
+        <article class="mode reveal">
+          <div class="mode-icon">◆</div>
+          <h3>Eventos</h3>
+          <p>
+            Actividades especiales y desafíos
+            para la comunidad.
+          </p>
+          <small>EVENTOS</small>
+        </article>
+
+
+        <article class="mode reveal delay-1">
+          <div class="mode-icon">✦</div>
+          <h3>Creativo</h3>
+          <p>
+            Construye, experimenta y deja volar
+            tu imaginación.
+          </p>
+          <small>CREATIVIDAD</small>
+        </article>
+
+
+        <article class="mode reveal delay-2">
+          <div class="mode-icon">☠</div>
+          <h3>Hardcore</h3>
+          <p>
+            Una experiencia más exigente para
+            jugadores que buscan un desafío.
+          </p>
+          <small>DESAFÍO</small>
+        </article>
+
+      </div>
+
     </section>
 
-    <section id="galeria" class="section dark">
-      <div class="section-head reveal"><small>04</small><h2>Galería</h2><p>Agrega aquí las capturas reales de tu servidor.</p></div>
-      <div class="gallery">
-        <div class="gallery-item big reveal">SPAWN</div>
-        <div class="gallery-item reveal">CONSTRUCCIÓN</div>
-        <div class="gallery-item reveal">EVENTO</div>
-        <div class="gallery-item reveal">MAPA</div>
-        <div class="gallery-item big reveal">COMUNIDAD</div>
+
+    <!-- CARACTERÍSTICAS -->
+    <section class="section" id="caracteristicas">
+
+      <div class="section-title reveal">
+
+        <span>03 / SISTEMAS</span>
+
+        <h2>
+          Características
+        </h2>
+
+        <p>
+          Algunos de los elementos que forman
+          la experiencia de ParaCraft.
+        </p>
+
       </div>
+
+
+      <div class="features">
+
+        <article class="feature reveal">
+          <strong>01</strong>
+          <div>
+            <h3>Mundos personalizados</h3>
+            <p>
+              Espacios preparados para explorar
+              y construir.
+            </p>
+          </div>
+        </article>
+
+
+        <article class="feature reveal delay-1">
+          <strong>02</strong>
+          <div>
+            <h3>Economía</h3>
+            <p>
+              Sistemas para intercambiar recursos
+              y progresar.
+            </p>
+          </div>
+        </article>
+
+
+        <article class="feature reveal delay-2">
+          <strong>03</strong>
+          <div>
+            <h3>Eventos</h3>
+            <p>
+              Actividades especiales para la comunidad.
+            </p>
+          </div>
+        </article>
+
+
+        <article class="feature reveal">
+          <strong>04</strong>
+          <div>
+            <h3>Protección</h3>
+            <p>
+              Sistemas para proteger construcciones
+              y espacios.
+            </p>
+          </div>
+        </article>
+
+
+        <article class="feature reveal delay-1">
+          <strong>05</strong>
+          <div>
+            <h3>Comunidad</h3>
+            <p>
+              Un proyecto centrado en jugadores
+              y participación.
+            </p>
+          </div>
+        </article>
+
+
+        <article class="feature reveal delay-2">
+          <strong>06</strong>
+          <div>
+            <h3>Sistemas personalizados</h3>
+            <p>
+              Funciones propias que pueden crecer
+              junto al servidor.
+            </p>
+          </div>
+        </article>
+
+      </div>
+
     </section>
 
-    <section id="noticias" class="section">
-      <div class="section-head reveal"><small>05</small><h2>Noticias</h2><p>Las últimas novedades de nuestra comunidad.</p></div>
-      <div class="grid news">
-        <article class="news-card reveal"><div class="news-image">UPDATE</div><div class="news-body"><small>02 OCT 2026</small><h3>Nueva actualización</h3><p>Descubre las nuevas características del servidor.</p><a href="#">Leer más →</a></div></article>
-        <article class="news-card reveal"><div class="news-image">EVENT</div><div class="news-body"><small>28 SEP 2026</small><h3>Nuevo evento</h3><p>Una nueva actividad llega a nuestra comunidad.</p><a href="#">Leer más →</a></div></article>
-        <article class="news-card reveal"><div class="news-image">COMMUNITY</div><div class="news-body"><small>20 SEP 2026</small><h3>La comunidad crece</h3><p>Gracias a todos los jugadores que forman parte del proyecto.</p><a href="#">Leer más →</a></div></article>
+
+    <!-- DESCRIPCIÓN -->
+    <section class="section description" id="descripcion">
+
+      <div class="description-box reveal">
+
+        <div class="description-title">
+
+          <span>04 / DESCRIPCIÓN</span>
+
+          <h2>
+            ¿Qué es
+            ParaCraft?
+          </h2>
+
+        </div>
+
+
+        <div class="description-text">
+
+          <p>
+            ParaCraft es un proyecto de Minecraft creado
+            para reunir diferentes experiencias dentro
+            de una misma comunidad.
+          </p>
+
+          <p>
+            La idea es crear un servidor que pueda crecer
+            junto a sus jugadores mediante nuevas
+            modalidades, mundos, eventos y sistemas.
+          </p>
+
+          <p>
+            Esta página funciona como la presentación
+            del proyecto y muestra nuestra identidad,
+            nuestras características y el equipo que
+            trabaja detrás del servidor.
+          </p>
+
+        </div>
+
       </div>
+
     </section>
 
-    <section id="equipo" class="section dark">
-      <div class="section-head reveal"><small>06</small><h2>Nuestro equipo</h2><p>Las personas que trabajan detrás del servidor.</p></div>
-      <div class="grid staff">
-        <article class="staff-card reveal"><div>👑</div><small>OWNER</small><h3>Nombre</h3></article>
-        <article class="staff-card reveal"><div>⚡</div><small>ADMIN</small><h3>Nombre</h3></article>
-        <article class="staff-card reveal"><div>🛡️</div><small>MODERATOR</small><h3>Nombre</h3></article>
-        <article class="staff-card reveal"><div>🔨</div><small>BUILDER</small><h3>Nombre</h3></article>
+
+    <!-- NOTICIAS -->
+    <section class="section dark" id="noticias">
+
+      <div class="section-title reveal">
+
+        <span>05 / ACTUALIDAD</span>
+
+        <h2>
+          Noticias
+        </h2>
+
+        <p>
+          Aquí aparecerán las novedades oficiales
+          de ParaCraft.
+        </p>
+
       </div>
+
+
+      <div class="news-grid">
+
+        <article class="news reveal">
+
+          <span>PROYECTO</span>
+
+          <h3>
+            ParaCraft está creciendo
+          </h3>
+
+          <p>
+            Estamos preparando nuevas funciones
+            y contenido para el servidor.
+          </p>
+
+        </article>
+
+
+        <article class="news reveal delay-1">
+
+          <span>EVENTOS</span>
+
+          <h3>
+            Próximamente
+          </h3>
+
+          <p>
+            Aquí podrás publicar información
+            sobre próximos eventos.
+          </p>
+
+        </article>
+
+
+        <article class="news reveal delay-2">
+
+          <span>ACTUALIZACIÓN</span>
+
+          <h3>
+            Nuevas novedades
+          </h3>
+
+          <p>
+            Esta sección puede utilizarse para
+            anunciar cambios importantes.
+          </p>
+
+        </article>
+
+      </div>
+
     </section>
 
-    <section id="reglas" class="section">
-      <div class="section-head reveal"><small>07</small><h2>Reglas</h2><p>Normas que mantienen nuestra comunidad organizada.</p></div>
-      <div class="rules">
-        <div class="rule reveal"><b>01</b><div><h3>Respeto</h3><p>Respeta a todos los miembros de la comunidad.</p></div></div>
-        <div class="rule reveal"><b>02</b><div><h3>Sin trampas</h3><p>No utilices hacks o ventajas ilegales.</p></div></div>
-        <div class="rule reveal"><b>03</b><div><h3>No spam</h3><p>Evita el spam y el abuso del chat.</p></div></div>
-        <div class="rule reveal"><b>04</b><div><h3>Diviértete</h3><p>Disfruta del servidor y ayuda a mantener una buena comunidad.</p></div></div>
+
+    <!-- EQUIPO -->
+    <section class="section" id="equipo">
+
+      <div class="section-title reveal">
+
+        <span>06 / STAFF</span>
+
+        <h2>
+          Equipo de desarrollo
+        </h2>
+
+        <p>
+          Las personas responsables de administrar
+          y desarrollar ParaCraft.
+        </p>
+
       </div>
+
+
+      <div class="team">
+
+        <article class="member reveal">
+
+          <div class="avatar owner">
+            D
+          </div>
+
+          <div>
+            <small>DUEÑO</small>
+            <h3>Dream42013</h3>
+            <p>Dirección del proyecto</p>
+          </div>
+
+        </article>
+
+
+        <article class="member reveal delay-1">
+
+          <div class="avatar">
+            P
+          </div>
+
+          <div>
+            <small>ADMIN</small>
+            <h3>ParaCraftero</h3>
+            <p>Administración</p>
+          </div>
+
+        </article>
+
+
+        <article class="member reveal delay-2">
+
+          <div class="avatar">
+            L
+          </div>
+
+          <div>
+            <small>ADMIN</small>
+            <h3>Lomimoon</h3>
+            <p>Administración</p>
+          </div>
+
+        </article>
+
+
+        <article class="member reveal">
+
+          <div class="avatar">
+            M
+          </div>
+
+          <div>
+            <small>ADMIN</small>
+            <h3>Mindsaly</h3>
+            <p>Administración</p>
+          </div>
+
+        </article>
+
+      </div>
+
     </section>
 
+
+    <!-- REGLAS -->
+    <section class="section rules" id="reglas">
+
+      <div class="section-title reveal">
+
+        <span>07 / COMUNIDAD</span>
+
+        <h2>
+          Reglas
+        </h2>
+
+        <p>
+          Reglas básicas para mantener una
+          comunidad agradable.
+        </p>
+
+      </div>
+
+
+      <div class="rules-grid">
+
+        <article class="rule reveal">
+          <strong>01</strong>
+          <h3>Respeto</h3>
+          <p>
+            Respeta a los jugadores y al equipo.
+          </p>
+        </article>
+
+
+        <article class="rule reveal delay-1">
+          <strong>02</strong>
+          <h3>Sin trampas</h3>
+          <p>
+            No utilices cheats, hacks o ventajas
+            externas no permitidas.
+          </p>
+        </article>
+
+
+        <article class="rule reveal delay-2">
+          <strong>03</strong>
+          <h3>Chat</h3>
+          <p>
+            Evita spam y comportamientos
+            molestos.
+          </p>
+        </article>
+
+
+        <article class="rule reveal">
+          <strong>04</strong>
+          <h3>Construcciones</h3>
+          <p>
+            Respeta las construcciones y
+            espacios de otros jugadores.
+          </p>
+        </article>
+
+      </div>
+
+    </section>
+
+
+    <!-- COMUNIDAD -->
     <section class="community">
-      <div class="reveal"><small>COMUNIDAD</small><h2>Forma parte de la historia.</h2><p>Encuentra nuestras redes oficiales y conoce a la comunidad.</p></div>
-      <div class="socials reveal">
-        <a href="#">Discord</a><a href="#">YouTube</a><a href="#">TikTok</a><a href="#">Instagram</a>
+
+      <div class="community-content reveal">
+
+        <span>PARACRAFT</span>
+
+        <h2>
+          Una comunidad
+          en construcción.
+        </h2>
+
+        <p>
+          Próximamente podrás encontrar aquí
+          todos nuestros canales oficiales.
+        </p>
+
+        <div class="socials">
+          <a href="#">Discord</a>
+          <a href="#">YouTube</a>
+          <a href="#">TikTok</a>
+          <a href="#">Instagram</a>
+        </div>
+
       </div>
+
     </section>
+
   </main>
 
+
+  <!-- FOOTER -->
   <footer>
-    <strong>NOMBRE<span>MC</span></strong>
-    <p>© <span id="year"></span> NOMBREMC. Todos los derechos reservados.</p>
-    <div><a href="#inicio">Inicio</a><a href="#reglas">Reglas</a><a href="#noticias">Noticias</a></div>
+
+    <div class="footer-logo">
+      <span class="logo-icon">P</span>
+      <strong>ParaCraft</strong>
+    </div>
+
+    <p>
+      © <span id="year"></span> ParaCraft
+    </p>
+
+    <p>
+      Minecraft Java + Bedrock
+    </p>
+
   </footer>
 
+
   <script src="script.js"></script>
+
 </body>
 </html>
