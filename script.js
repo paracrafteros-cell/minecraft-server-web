@@ -1,27 +1,104 @@
-const menuBtn = document.getElementById("menuBtn");
-const nav = document.getElementById("nav");
+// ========================================
+// ParaCraft - JavaScript
+// ========================================
 
-menuBtn.addEventListener("click", () => {
-  nav.classList.toggle("open");
-});
 
-document.querySelectorAll("#nav a").forEach(link => {
-  link.addEventListener("click", () => nav.classList.remove("open"));
-});
+// AÑO AUTOMÁTICO
+const year = document.getElementById("year");
 
-const observer = new IntersectionObserver(entries => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) entry.target.classList.add("show");
+if (year) {
+  year.textContent = new Date().getFullYear();
+}
+
+
+// MENÚ MÓVIL
+const menuButton = document.getElementById("menuButton");
+const navigation = document.getElementById("navigation");
+
+if (menuButton && navigation) {
+
+  menuButton.addEventListener("click", () => {
+    navigation.classList.toggle("open");
   });
-}, { threshold: 0.12 });
 
-document.querySelectorAll(".reveal").forEach(el => observer.observe(el));
+}
 
-const navbar = document.querySelector(".navbar");
-window.addEventListener("scroll", () => {
-  navbar.style.background = window.scrollY > 40
-    ? "rgba(7,8,12,.94)"
-    : "rgba(7,8,12,.78)";
+
+// CERRAR MENÚ AL PULSAR UN ENLACE
+document.querySelectorAll(".navigation a").forEach(link => {
+
+  link.addEventListener("click", () => {
+
+    navigation?.classList.remove("open");
+
+  });
+
 });
 
-document.getElementById("year").textContent = new Date().getFullYear();
+
+// NAVBAR AL HACER SCROLL
+const navbar = document.getElementById("navbar");
+
+window.addEventListener("scroll", () => {
+
+  if (!navbar) return;
+
+  if (window.scrollY > 30) {
+
+    navbar.classList.add("scrolled");
+
+  } else {
+
+    navbar.classList.remove("scrolled");
+
+  }
+
+});
+
+
+// ANIMACIONES DE APARICIÓN
+const revealElements = document.querySelectorAll(".reveal");
+
+const revealObserver = new IntersectionObserver(
+
+  entries => {
+
+    entries.forEach(entry => {
+
+      if (entry.isIntersecting) {
+
+        entry.target.classList.add("visible");
+
+        revealObserver.unobserve(entry.target);
+
+      }
+
+    });
+
+  },
+
+  {
+    threshold: 0.12
+  }
+
+);
+
+
+revealElements.forEach(element => {
+
+  revealObserver.observe(element);
+
+});
+
+
+// CERRAR MENÚ SI SE REDIMENSIONA LA VENTANA
+window.addEventListener("resize", () => {
+
+  if (window.innerWidth > 760) {
+
+    navigation?.classList.remove("open");
+
+  }
+
+});
+});
