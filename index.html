@@ -1,719 +1,650 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <meta
-    name="description"
-    content="ParaCraft — servidor de Minecraft Java y Bedrock."
-  >
+    <title>Nixora | Servidor de Minecraft</title>
+    <meta name="description" content="Nixora — servidor de Minecraft Java y Bedrock. Descubre nuestras modalidades, características, eventos y comunidad.">
 
-  <title>ParaCraft | Servidor de Minecraft</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-  <link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
-    rel="stylesheet"
-  >
-
-  <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-  <div class="background-grid"></div>
-  <div class="glow glow-one"></div>
-  <div class="glow glow-two"></div>
+    <!-- Fondo -->
+    <div class="background-grid"></div>
+    <div class="glow glow-1"></div>
+    <div class="glow glow-2"></div>
 
-  <!-- NAVBAR -->
-  <header class="navbar" id="navbar">
+    <!-- NAVBAR -->
+    <header class="navbar" id="navbar">
+        <div class="nav-container">
 
-    <a href="#inicio" class="logo">
-      <span class="logo-icon">P</span>
-      <span>ParaCraft</span>
-    </a>
+            <a href="#inicio" class="logo">
+                <span class="logo-icon">N</span>
+                <span>Nixora</span>
+            </a>
 
-    <button class="menu-button" id="menuButton">
-      ☰
-    </button>
+            <nav class="nav-links" id="navLinks">
+                <a href="#inicio">Inicio</a>
+                <a href="#servidor">Servidor</a>
+                <a href="#modalidades">Modalidades</a>
+                <a href="#caracteristicas">Características</a>
+                <a href="#descripcion">Descripción</a>
+                <a href="#noticias">Noticias</a>
+                <a href="#equipo">Equipo</a>
+                <a href="#reglas">Reglas</a>
+                <a href="#comunidad">Comunidad</a>
+            </nav>
 
-    <nav class="navigation" id="navigation">
-      <a href="#inicio">Inicio</a>
-      <a href="#servidor">Servidor</a>
-      <a href="#modalidades">Modalidades</a>
-      <a href="#caracteristicas">Características</a>
-      <a href="#descripcion">Descripción</a>
-      <a href="#noticias">Noticias</a>
-      <a href="#equipo">Equipo</a>
-      <a href="#reglas">Reglas</a>
-    </nav>
+            <button class="menu-button" id="menuButton" aria-label="Abrir menú">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
 
-  </header>
+        </div>
+    </header>
 
-
-  <main>
 
     <!-- HERO -->
-    <section class="hero" id="inicio">
+    <main>
 
-      <div class="hero-content reveal">
+        <section class="hero" id="inicio">
 
-        <div class="status">
-          <span class="status-dot"></span>
-          SERVIDOR DE MINECRAFT
-        </div>
+            <div class="hero-content">
 
-        <h1>
-          PARA<span>CRAFT</span>
-        </h1>
+                <div class="status">
+                    <span class="status-dot"></span>
+                    SERVIDOR DE MINECRAFT
+                </div>
 
-        <p>
-          Un servidor de Minecraft creado para explorar,
-          construir, competir y formar parte de una comunidad.
-        </p>
+                <h1>
+                    NIX<span>ORA</span>
+                </h1>
 
-        <div class="tags">
-          <span>JAVA</span>
-          <span>BEDROCK</span>
-          <span>COMUNIDAD</span>
-          <span>EVENTOS</span>
-        </div>
+                <p class="hero-description">
+                    Una nueva forma de vivir Minecraft.
+                    Explora, construye, compite y forma parte
+                    de una comunidad creada para disfrutar.
+                </p>
 
-      </div>
+                <div class="hero-tags">
+                    <span>JAVA</span>
+                    <span>BEDROCK</span>
+                    <span>EVENTOS</span>
+                    <span>COMUNIDAD</span>
+                </div>
 
+                <div class="hero-stats">
 
-      <div class="hero-card reveal delay-1">
+                    <div>
+                        <strong>24/7</strong>
+                        <small>Disponibilidad</small>
+                    </div>
 
-        <div class="card-header">
-          <strong>PARACRAFT</strong>
-          <span class="online">● ONLINE</span>
-        </div>
+                    <div>
+                        <strong>Java + Bedrock</strong>
+                        <small>Compatibilidad</small>
+                    </div>
 
-        <div class="hero-card-content">
+                    <div>
+                        <strong>∞</strong>
+                        <small>Aventuras</small>
+                    </div>
 
-          <div class="minecraft-symbol">
-            ◆
-          </div>
+                </div>
 
-          <h2>
-            Tu próxima aventura
-            empieza aquí.
-          </h2>
+            </div>
 
-          <p>
-            Explora mundos, construye grandes proyectos
-            y descubre todo lo que ParaCraft tiene para ofrecer.
-          </p>
 
-        </div>
+            <div class="hero-card">
 
-        <div class="hero-stats">
+                <div class="minecraft-window">
 
-          <div>
-            <strong>24/7</strong>
-            <small>Disponibilidad</small>
-          </div>
+                    <div class="window-top">
+                        <div class="window-dots">
+                            <i></i>
+                            <i></i>
+                            <i></i>
+                        </div>
 
-          <div>
-            <strong>JAVA</strong>
-            <small>Edición</small>
-          </div>
+                        <span>NIXORA NETWORK</span>
+                    </div>
 
-          <div>
-            <strong>BEDROCK</strong>
-            <small>Edición</small>
-          </div>
+                    <div class="window-content">
 
-        </div>
+                        <div class="server-icon">
+                            N
+                        </div>
 
-      </div>
+                        <h2>NIXORA</h2>
 
-    </section>
+                        <div class="online">
+                            <span></span>
+                            SERVIDOR ACTIVO
+                        </div>
 
+                        <p>
+                            Tu próxima aventura empieza aquí.
+                        </p>
 
-    <!-- SERVIDOR -->
-    <section class="section" id="servidor">
+                    </div>
 
-      <div class="section-title reveal">
+                </div>
 
-        <span>01 / EL PROYECTO</span>
+            </div>
 
-        <h2>
-          Nuestro servidor
-        </h2>
+        </section>
 
-        <p>
-          ParaCraft es un proyecto de Minecraft pensado
-          para crear una comunidad activa y ofrecer diferentes
-          experiencias dentro de un mismo servidor.
-        </p>
 
-      </div>
+        <!-- SERVIDOR -->
+        <section class="section" id="servidor">
 
+            <div class="section-header reveal">
+                <span class="section-label">01 / NUESTRO SERVIDOR</span>
 
-      <div class="info-grid">
+                <h2>
+                    Bienvenido a <span>Nixora</span>
+                </h2>
 
-        <article class="info-card reveal">
+                <p>
+                    Un servidor creado para ofrecer una experiencia
+                    diferente dentro del mundo de Minecraft.
+                </p>
+            </div>
+
+
+            <div class="cards-grid three">
+
+                <article class="info-card reveal">
+                    <div class="card-icon">🌎</div>
+                    <h3>Un mundo por explorar</h3>
+                    <p>
+                        Descubre nuevos lugares, construye tus propias
+                        aventuras y explora un mundo lleno de posibilidades.
+                    </p>
+                </article>
+
+                <article class="info-card reveal">
+                    <div class="card-icon">⚔️</div>
+                    <h3>Competencia</h3>
+                    <p>
+                        Enfréntate a otros jugadores, participa en eventos
+                        y demuestra tus habilidades.
+                    </p>
+                </article>
+
+                <article class="info-card reveal">
+                    <div class="card-icon">👥</div>
+                    <h3>Comunidad</h3>
+                    <p>
+                        Conoce jugadores, forma equipos y participa
+                        activamente en la comunidad de Nixora.
+                    </p>
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- MODALIDADES -->
+        <section class="section alternate" id="modalidades">
+
+            <div class="section-header reveal">
+                <span class="section-label">02 / MODALIDADES</span>
+
+                <h2>
+                    Diferentes formas de <span>jugar</span>
+                </h2>
+
+                <p>
+                    Nixora está pensado para ofrecer distintas
+                    experiencias dentro de Minecraft.
+                </p>
+            </div>
+
+
+            <div class="mode-grid">
+
+                <article class="mode-card reveal">
+                    <span class="mode-number">01</span>
+                    <div class="mode-icon">🌲</div>
+                    <h3>Survival</h3>
+                    <p>
+                        Sobrevive, consigue recursos y crea tu propia historia.
+                    </p>
+                </article>
+
+                <article class="mode-card reveal">
+                    <span class="mode-number">02</span>
+                    <div class="mode-icon">⚔️</div>
+                    <h3>PvP</h3>
+                    <p>
+                        Combate contra otros jugadores y demuestra tu habilidad.
+                    </p>
+                </article>
+
+                <article class="mode-card reveal">
+                    <span class="mode-number">03</span>
+                    <div class="mode-icon">☁️</div>
+                    <h3>SkyBlock</h3>
+                    <p>
+                        Empieza con una pequeña isla y conviértela en un imperio.
+                    </p>
+                </article>
+
+                <article class="mode-card reveal">
+                    <span class="mode-number">04</span>
+                    <div class="mode-icon">🛏️</div>
+                    <h3>BedWars</h3>
+                    <p>
+                        Protege tu cama, consigue recursos y elimina a tus rivales.
+                    </p>
+                </article>
+
+                <article class="mode-card reveal">
+                    <span class="mode-number">05</span>
+                    <div class="mode-icon">🏗️</div>
+                    <h3>Creativo</h3>
+                    <p>
+                        Construye libremente y deja volar tu imaginación.
+                    </p>
+                </article>
+
+                <article class="mode-card reveal">
+                    <span class="mode-number">06</span>
+                    <div class="mode-icon">💀</div>
+                    <h3>Hardcore</h3>
+                    <p>
+                        Una experiencia más difícil para quienes buscan un desafío.
+                    </p>
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- CARACTERÍSTICAS -->
+        <section class="section" id="caracteristicas">
+
+            <div class="section-header reveal">
+                <span class="section-label">03 / CARACTERÍSTICAS</span>
+
+                <h2>
+                    Más que un servidor de <span>Minecraft</span>
+                </h2>
+            </div>
+
+
+            <div class="feature-grid">
+
+                <article class="feature reveal">
+                    <span>01</span>
+                    <div>
+                        <h3>Economía</h3>
+                        <p>
+                            Compra, vende, comercia y construye tu propia economía.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="feature reveal">
+                    <span>02</span>
+                    <div>
+                        <h3>Eventos</h3>
+                        <p>
+                            Eventos especiales y actividades para la comunidad.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="feature reveal">
+                    <span>03</span>
+                    <div>
+                        <h3>Sistemas personalizados</h3>
+                        <p>
+                            Mecánicas diseñadas especialmente para Nixora.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="feature reveal">
+                    <span>04</span>
+                    <div>
+                        <h3>Java + Bedrock</h3>
+                        <p>
+                            Una comunidad conectada desde diferentes plataformas.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="feature reveal">
+                    <span>05</span>
+                    <div>
+                        <h3>Protección</h3>
+                        <p>
+                            Sistemas destinados a proteger las construcciones y jugadores.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="feature reveal">
+                    <span>06</span>
+                    <div>
+                        <h3>Actualizaciones</h3>
+                        <p>
+                            Nuevas características y contenido para mantener
+                            la experiencia en evolución.
+                        </p>
+                    </div>
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- DESCRIPCIÓN -->
+        <section class="section description-section" id="descripcion">
+
+            <div class="description-box reveal">
+
+                <div class="description-number">
+                    NIX
+                </div>
+
+                <div class="description-content">
+
+                    <span class="section-label">04 / SOBRE NIXORA</span>
+
+                    <h2>
+                        Un servidor creado para <span>crear historias</span>
+                    </h2>
+
+                    <p>
+                        Nixora es un proyecto centrado en crear una experiencia
+                        de Minecraft donde cada jugador pueda encontrar su propia
+                        forma de divertirse.
+                    </p>
+
+                    <p>
+                        Desde construir una enorme ciudad hasta competir en
+                        diferentes modalidades, participar en eventos o simplemente
+                        pasar el rato con amigos.
+                    </p>
+
+                    <p>
+                        Nuestro objetivo es construir una comunidad activa y un
+                        servidor que pueda seguir creciendo junto a sus jugadores.
+                    </p>
+
+                    <div class="description-points">
+
+                        <div>
+                            <strong>01</strong>
+                            <span>Comunidad activa</span>
+                        </div>
+
+                        <div>
+                            <strong>02</strong>
+                            <span>Contenido personalizado</span>
+                        </div>
+
+                        <div>
+                            <strong>03</strong>
+                            <span>Experiencias diferentes</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- NOTICIAS -->
+        <section class="section alternate" id="noticias">
+
+            <div class="section-header reveal">
+                <span class="section-label">05 / NOTICIAS</span>
+
+                <h2>
+                    Lo que ocurre en <span>Nixora</span>
+                </h2>
+            </div>
+
+
+            <div class="news-grid">
+
+                <article class="news-card reveal">
+                    <div class="news-tag">NIXORA</div>
+                    <h3>Bienvenido a Nixora</h3>
+                    <p>
+                        Conoce el proyecto, sus modalidades y todo lo que
+                        estamos preparando para la comunidad.
+                    </p>
+                    <span class="news-date">NIXORA NETWORK</span>
+                </article>
+
+                <article class="news-card reveal">
+                    <div class="news-tag">EVENTO</div>
+                    <h3>Próximos eventos</h3>
+                    <p>
+                        Mantente atento a los eventos especiales que llegarán
+                        próximamente al servidor.
+                    </p>
+                    <span class="news-date">PRÓXIMAMENTE</span>
+                </article>
+
+                <article class="news-card reveal">
+                    <div class="news-tag">ACTUALIZACIÓN</div>
+                    <h3>Nuevas características</h3>
+                    <p>
+                        El servidor continuará recibiendo nuevas funciones,
+                        sistemas y contenido.
+                    </p>
+                    <span class="news-date">EN DESARROLLO</span>
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- EQUIPO -->
+        <section class="section" id="equipo">
+
+            <div class="section-header reveal">
+                <span class="section-label">06 / EQUIPO</span>
+
+                <h2>
+                    Las personas detrás de <span>Nixora</span>
+                </h2>
+            </div>
+
+
+            <div class="team-grid">
+
+                <article class="team-card owner reveal">
+                    <div class="team-avatar">D</div>
+                    <span class="role">DUEÑO</span>
+                    <h3>Dream42013</h3>
+                    <p>Owner</p>
+                </article>
+
+                <article class="team-card reveal">
+                    <div class="team-avatar">P</div>
+                    <span class="role">ADMIN</span>
+                    <h3>ParaCraftero</h3>
+                    <p>Administración</p>
+                </article>
+
+                <article class="team-card reveal">
+                    <div class="team-avatar">L</div>
+                    <span class="role">ADMIN</span>
+                    <h3>Lomimoon</h3>
+                    <p>Administración</p>
+                </article>
+
+                <article class="team-card reveal">
+                    <div class="team-avatar">M</div>
+                    <span class="role">ADMIN</span>
+                    <h3>Mindsaly</h3>
+                    <p>Administración</p>
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- REGLAS -->
+        <section class="section alternate" id="reglas">
+
+            <div class="section-header reveal">
+                <span class="section-label">07 / REGLAS</span>
+
+                <h2>
+                    Una comunidad para <span>todos</span>
+                </h2>
+            </div>
+
+
+            <div class="rules-grid">
+
+                <article class="rule reveal">
+                    <span>01</span>
+                    <div>
+                        <h3>Respeto</h3>
+                        <p>
+                            Trata a los demás jugadores con respeto.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="rule reveal">
+                    <span>02</span>
+                    <div>
+                        <h3>No hacer trampas</h3>
+                        <p>
+                            No utilices ventajas externas o métodos injustos.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="rule reveal">
+                    <span>03</span>
+                    <div>
+                        <h3>No spam</h3>
+                        <p>
+                            Evita el spam y el contenido molesto.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="rule reveal">
+                    <span>04</span>
+                    <div>
+                        <h3>Diviértete</h3>
+                        <p>
+                            El objetivo principal es disfrutar de Nixora.
+                        </p>
+                    </div>
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- COMUNIDAD -->
+        <section class="section community" id="comunidad">
+
+            <div class="community-box reveal">
+
+                <span class="section-label">08 / COMUNIDAD</span>
+
+                <h2>
+                    Nixora también vive <span>fuera del juego</span>
+                </h2>
+
+                <p>
+                    Mantente informado, conoce a otros jugadores y forma parte
+                    de nuestra comunidad.
+                </p>
+
+                <div class="socials">
+
+                    <a href="#" class="social">
+                        <span>◈</span>
+                        <div>
+                            <strong>Discord</strong>
+                            <small>Comunidad Nixora</small>
+                        </div>
+                    </a>
+
+                    <a href="#" class="social">
+                        <span>▶</span>
+                        <div>
+                            <strong>YouTube</strong>
+                            <small>Contenido de Nixora</small>
+                        </div>
+                    </a>
+
+                    <a href="#" class="social">
+                        <span>𝕏</span>
+                        <div>
+                            <strong>Redes</strong>
+                            <small>Noticias y novedades</small>
+                        </div>
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer>
+
+        <div class="footer-container">
+
+            <div class="footer-logo">
+                <span class="logo-icon">N</span>
+                <strong>Nixora</strong>
+            </div>
 
-          <span>01</span>
-
-          <h3>
-            Comunidad
-          </h3>
-
-          <p>
-            Un espacio para conocer jugadores,
-            compartir construcciones y disfrutar
-            diferentes aventuras.
-          </p>
-
-        </article>
-
-
-        <article class="info-card reveal delay-1">
-
-          <span>02</span>
-
-          <h3>
-            Mundo
-          </h3>
-
-          <p>
-            Mundos, zonas especiales y diferentes
-            experiencias que pueden crecer con
-            el proyecto.
-          </p>
-
-        </article>
-
-
-        <article class="info-card reveal delay-2">
-
-          <span>03</span>
-
-          <h3>
-            Proyecto
-          </h3>
-
-          <p>
-            ParaCraft está pensado para evolucionar
-            con nuevas modalidades, eventos y sistemas.
-          </p>
-
-        </article>
-
-      </div>
-
-    </section>
-
-
-    <!-- MODALIDADES -->
-    <section class="section dark" id="modalidades">
-
-      <div class="section-title reveal">
-
-        <span>02 / EXPERIENCIAS</span>
-
-        <h2>
-          Modalidades
-        </h2>
-
-        <p>
-          Diferentes maneras de disfrutar Minecraft.
-        </p>
-
-      </div>
-
-
-      <div class="modes-grid">
-
-        <article class="mode reveal">
-          <div class="mode-icon">⛏</div>
-          <h3>Survival</h3>
-          <p>
-            Sobrevive, consigue recursos y construye
-            tu propio lugar en el mundo.
-          </p>
-          <small>AVENTURA</small>
-        </article>
-
-
-        <article class="mode reveal delay-1">
-          <div class="mode-icon">⚔</div>
-          <h3>PvP</h3>
-          <p>
-            Combates y desafíos para quienes
-            buscan acción.
-          </p>
-          <small>COMPETENCIA</small>
-        </article>
-
-
-        <article class="mode reveal delay-2">
-          <div class="mode-icon">☁</div>
-          <h3>SkyBlock</h3>
-          <p>
-            Empieza desde una pequeña isla y
-            conviértela en un gran proyecto.
-          </p>
-          <small>PROGRESIÓN</small>
-        </article>
-
-
-        <article class="mode reveal">
-          <div class="mode-icon">◆</div>
-          <h3>Eventos</h3>
-          <p>
-            Actividades especiales y desafíos
-            para la comunidad.
-          </p>
-          <small>EVENTOS</small>
-        </article>
-
-
-        <article class="mode reveal delay-1">
-          <div class="mode-icon">✦</div>
-          <h3>Creativo</h3>
-          <p>
-            Construye, experimenta y deja volar
-            tu imaginación.
-          </p>
-          <small>CREATIVIDAD</small>
-        </article>
-
-
-        <article class="mode reveal delay-2">
-          <div class="mode-icon">☠</div>
-          <h3>Hardcore</h3>
-          <p>
-            Una experiencia más exigente para
-            jugadores que buscan un desafío.
-          </p>
-          <small>DESAFÍO</small>
-        </article>
-
-      </div>
-
-    </section>
-
-
-    <!-- CARACTERÍSTICAS -->
-    <section class="section" id="caracteristicas">
-
-      <div class="section-title reveal">
-
-        <span>03 / SISTEMAS</span>
-
-        <h2>
-          Características
-        </h2>
-
-        <p>
-          Algunos de los elementos que forman
-          la experiencia de ParaCraft.
-        </p>
-
-      </div>
-
-
-      <div class="features">
-
-        <article class="feature reveal">
-          <strong>01</strong>
-          <div>
-            <h3>Mundos personalizados</h3>
             <p>
-              Espacios preparados para explorar
-              y construir.
+                Un mundo. Miles de posibilidades.
             </p>
-          </div>
-        </article>
 
+            <div class="footer-line"></div>
 
-        <article class="feature reveal delay-1">
-          <strong>02</strong>
-          <div>
-            <h3>Economía</h3>
-            <p>
-              Sistemas para intercambiar recursos
-              y progresar.
-            </p>
-          </div>
-        </article>
-
-
-        <article class="feature reveal delay-2">
-          <strong>03</strong>
-          <div>
-            <h3>Eventos</h3>
-            <p>
-              Actividades especiales para la comunidad.
-            </p>
-          </div>
-        </article>
-
-
-        <article class="feature reveal">
-          <strong>04</strong>
-          <div>
-            <h3>Protección</h3>
-            <p>
-              Sistemas para proteger construcciones
-              y espacios.
-            </p>
-          </div>
-        </article>
-
-
-        <article class="feature reveal delay-1">
-          <strong>05</strong>
-          <div>
-            <h3>Comunidad</h3>
-            <p>
-              Un proyecto centrado en jugadores
-              y participación.
-            </p>
-          </div>
-        </article>
-
-
-        <article class="feature reveal delay-2">
-          <strong>06</strong>
-          <div>
-            <h3>Sistemas personalizados</h3>
-            <p>
-              Funciones propias que pueden crecer
-              junto al servidor.
-            </p>
-          </div>
-        </article>
-
-      </div>
-
-    </section>
-
-
-    <!-- DESCRIPCIÓN -->
-    <section class="section description" id="descripcion">
-
-      <div class="description-box reveal">
-
-        <div class="description-title">
-
-          <span>04 / DESCRIPCIÓN</span>
-
-          <h2>
-            ¿Qué es
-            ParaCraft?
-          </h2>
+            <div class="footer-bottom">
+                <span>© <span id="year"></span> Nixora Network</span>
+                <span>Servidor de Minecraft</span>
+            </div>
 
         </div>
 
+    </footer>
 
-        <div class="description-text">
 
-          <p>
-            ParaCraft es un proyecto de Minecraft creado
-            para reunir diferentes experiencias dentro
-            de una misma comunidad.
-          </p>
-
-          <p>
-            La idea es crear un servidor que pueda crecer
-            junto a sus jugadores mediante nuevas
-            modalidades, mundos, eventos y sistemas.
-          </p>
-
-          <p>
-            Esta página funciona como la presentación
-            del proyecto y muestra nuestra identidad,
-            nuestras características y el equipo que
-            trabaja detrás del servidor.
-          </p>
-
-        </div>
-
-      </div>
-
-    </section>
-
-
-    <!-- NOTICIAS -->
-    <section class="section dark" id="noticias">
-
-      <div class="section-title reveal">
-
-        <span>05 / ACTUALIDAD</span>
-
-        <h2>
-          Noticias
-        </h2>
-
-        <p>
-          Aquí aparecerán las novedades oficiales
-          de ParaCraft.
-        </p>
-
-      </div>
-
-
-      <div class="news-grid">
-
-        <article class="news reveal">
-
-          <span>PROYECTO</span>
-
-          <h3>
-            ParaCraft está creciendo
-          </h3>
-
-          <p>
-            Estamos preparando nuevas funciones
-            y contenido para el servidor.
-          </p>
-
-        </article>
-
-
-        <article class="news reveal delay-1">
-
-          <span>EVENTOS</span>
-
-          <h3>
-            Próximamente
-          </h3>
-
-          <p>
-            Aquí podrás publicar información
-            sobre próximos eventos.
-          </p>
-
-        </article>
-
-
-        <article class="news reveal delay-2">
-
-          <span>ACTUALIZACIÓN</span>
-
-          <h3>
-            Nuevas novedades
-          </h3>
-
-          <p>
-            Esta sección puede utilizarse para
-            anunciar cambios importantes.
-          </p>
-
-        </article>
-
-      </div>
-
-    </section>
-
-
-    <!-- EQUIPO -->
-    <section class="section" id="equipo">
-
-      <div class="section-title reveal">
-
-        <span>06 / STAFF</span>
-
-        <h2>
-          Equipo de desarrollo
-        </h2>
-
-        <p>
-          Las personas responsables de administrar
-          y desarrollar ParaCraft.
-        </p>
-
-      </div>
-
-
-      <div class="team">
-
-        <article class="member reveal">
-
-          <div class="avatar owner">
-            D
-          </div>
-
-          <div>
-            <small>DUEÑO</small>
-            <h3>Dream42013</h3>
-            <p>Dirección del proyecto</p>
-          </div>
-
-        </article>
-
-
-        <article class="member reveal delay-1">
-
-          <div class="avatar">
-            P
-          </div>
-
-          <div>
-            <small>ADMIN</small>
-            <h3>ParaCraftero</h3>
-            <p>Administración</p>
-          </div>
-
-        </article>
-
-
-        <article class="member reveal delay-2">
-
-          <div class="avatar">
-            L
-          </div>
-
-          <div>
-            <small>ADMIN</small>
-            <h3>Lomimoon</h3>
-            <p>Administración</p>
-          </div>
-
-        </article>
-
-
-        <article class="member reveal">
-
-          <div class="avatar">
-            M
-          </div>
-
-          <div>
-            <small>ADMIN</small>
-            <h3>Mindsaly</h3>
-            <p>Administración</p>
-          </div>
-
-        </article>
-
-      </div>
-
-    </section>
-
-
-    <!-- REGLAS -->
-    <section class="section rules" id="reglas">
-
-      <div class="section-title reveal">
-
-        <span>07 / COMUNIDAD</span>
-
-        <h2>
-          Reglas
-        </h2>
-
-        <p>
-          Reglas básicas para mantener una
-          comunidad agradable.
-        </p>
-
-      </div>
-
-
-      <div class="rules-grid">
-
-        <article class="rule reveal">
-          <strong>01</strong>
-          <h3>Respeto</h3>
-          <p>
-            Respeta a los jugadores y al equipo.
-          </p>
-        </article>
-
-
-        <article class="rule reveal delay-1">
-          <strong>02</strong>
-          <h3>Sin trampas</h3>
-          <p>
-            No utilices cheats, hacks o ventajas
-            externas no permitidas.
-          </p>
-        </article>
-
-
-        <article class="rule reveal delay-2">
-          <strong>03</strong>
-          <h3>Chat</h3>
-          <p>
-            Evita spam y comportamientos
-            molestos.
-          </p>
-        </article>
-
-
-        <article class="rule reveal">
-          <strong>04</strong>
-          <h3>Construcciones</h3>
-          <p>
-            Respeta las construcciones y
-            espacios de otros jugadores.
-          </p>
-        </article>
-
-      </div>
-
-    </section>
-
-
-    <!-- COMUNIDAD -->
-    <section class="community">
-
-      <div class="community-content reveal">
-
-        <span>PARACRAFT</span>
-
-        <h2>
-          Una comunidad
-          en construcción.
-        </h2>
-
-        <p>
-          Próximamente podrás encontrar aquí
-          todos nuestros canales oficiales.
-        </p>
-
-        <div class="socials">
-          <a href="#">Discord</a>
-          <a href="#">YouTube</a>
-          <a href="#">TikTok</a>
-          <a href="#">Instagram</a>
-        </div>
-
-      </div>
-
-    </section>
-
-  </main>
-
-
-  <!-- FOOTER -->
-  <footer>
-
-    <div class="footer-logo">
-      <span class="logo-icon">P</span>
-      <strong>ParaCraft</strong>
-    </div>
-
-    <p>
-      © <span id="year"></span> ParaCraft
-    </p>
-
-    <p>
-      Minecraft Java + Bedrock
-    </p>
-
-  </footer>
-
-
-  <script src="script.js"></script>
+    <script src="script.js"></script>
 
 </body>
 </html>
